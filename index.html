@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos Java</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/main.js"></script>
+    <script src="./js/pesquisa.js"></script>
 </head>
 <body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
   
@@ -17,7 +19,8 @@
 
     <h1></h1>
     <p style="margin-top: 100px;">
-    <button class="button" onclick="Pesquisar()">Pesquisar</button><p>  
+    <h1>Pesquise por um termo : <form action="javascript:void();" onsubmit="if(this.t1.value!='')parent.findString(this.t1.value);return(false);"><input type="text" id="t1" name="t1" size="20"><input type="submit" name="b1" value="Procurar"></form>
+    </p>
     <img src="" alt="">
 
     <header id="home">
@@ -28,8 +31,8 @@
         </div>
         </div>
     </header>
-
-    <section class="NossaHistory" id="Desafio1">
+    
+    <section class="NossaHistory" id="poo">
         <div class="container">
             <div class="title">
             <h1>Definição de POO</h1>
@@ -81,7 +84,7 @@
     </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="objeto">
         <div class="container">
             <div class="title">
             <h1>O que é Objeto?</h1>
@@ -96,7 +99,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="classe">
         <div class="container">
             <div class="title">
             <h1>O que é Classe?</h1>
@@ -122,7 +125,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="atributos">
         <div class="container">
             <div class="title">
             <h1>O que são atributos?</h1>
@@ -131,7 +134,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="metodos">
         <div class="container">
             <div class="title">
             <h1>O que são métodos?</h1>
@@ -152,7 +155,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="pacotes">
         <div class="container">
             <div class="title">
             <h1>O que são pacotes? Como implentar classes em pacotes?</h1>
@@ -189,7 +192,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="interface">
         <div class="container">
             <div class="title">
             <h1>O que é uma interface em Java?</h1>
@@ -208,7 +211,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="enumeracao">
         <div class="container">
             <div class="title">
             <h1>O que são enumerações?</h1>
@@ -250,7 +253,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="serielizacao">
         <div class="container">
             <div class="title">
             <h1>O que é Serialização de Objetos em Java?</h1>
@@ -320,7 +323,7 @@
             </div>
     </section>
 
-    <section class="NossaHistory" id="Desafio3">
+    <section class="NossaHistory" id="relacionameno">
         <div class="container">
             <div class="title">
             <h1>O  que é relacionamento de objetos?</h1>
